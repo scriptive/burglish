@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>Burmese Font Converter</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <link rel="stylesheet" href="lib.css" type="text/css">
+  <link rel="stylesheet" href="hash.css" type="text/css">
+  <link rel="stylesheet" href="embed.css" type="text/css">
+  <!--[if IE]><link rel="stylesheet" href="embedie.css" type="text/css"><![endif]-->
+</head>
+
+<body onload='hH("lib int burmese burglish "+(/\?beta/i.test(location.href)?"english":"")+" language",hL)'>
+  <h1>::Burmese Font Converter::</h1>
+  <center>
+    <table width="90%">
+      <tr>
+        <td width="50%">
+          <div id="sourcetag"></div>
+        </td>
+        <td width="50%">
+          <div id="desttag"></div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="sourceArea"></div>
+        </td>
+        <td>
+          <div id="destArea"></div>
+        </td>
+      </tr>
+    </table>
+    <input type="button" onclick="return Qx();" value="Convert ->" />
+    <input id="wR" style="display:none;" type="button" onclick="return gn();" value="Convert Beta->" />
+    <input type="button" onclick="return g9();" value="Char Code->" />
+    <input type="button" onclick="return N3();" value="Escape Unicode->" />
+    <a id="w3" href="?beta">Convert Beta</a><br>
+    <div id="wL" style="display:none;">NZ list not to Qx(seperated by commas),case ignore<textarea id="exceptions" style="width:90%"></textarea><br><br>Force Qx list(seperated by commas),case sensitive<textarea id="force" style="width:90%"></textarea><br><br>and there is<b> 60000+ </b>pre
+      added English words from Firefox dictionary.<br>and<b> 18000+ </b>Burglish datas with Burglizer<br>and if you know more,pls send your word filtering list by email to(burglish at gmail dot com)<br>Please Download Latest Dictionary from <a href="http://code.google.com/p/burglish/downloads/list">http://code.google.com/p/burglish/downloads/list</a><br>Find
+      Latest Word Filtering List(English.js)for FontConv.htm<br></div>
+  </center>
+  <div class="section" id="usages">...</div>
+  <script src="basic.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    function g9() {
+      var wq = $("sourceText");
+      var hY = wq.value;
+      var ww = "";
+      for (var i = 0; i < hY.length; i++) {
+        var code = hY.charCodeAt(i);
+        if (code == 10) {
+          ww += "\n";
+        } else {
+          ww += "'" + hY.charCodeAt(i) + "',";
+        }
+      };
+      $("destText").value = ww;
+    };
+
+    function gA() {
+      var wq = $("sourceText");
+      var dest = $("destText");
+      var hY = wq.value;
+      dest.value = unescape(hY);
+    };
+
+    function N3() {
+      var wq = $("sourceText");
+      var dest = $("destText");
+      var hY = wq.value;
+      dest.value = NJ(Qu(hY));
+    };
+
+    function Qx() {
+      var wq = $("sourceText").value;
+      self.status = gM["source"].name + " ->" + gM["dest"].name;
+      var KA = wq.Ng(gM["source"].name, gM["dest"].name);
+      $("destText").value = KA;
+    };
+
+    function gn() {
+      Nl(true, "g1");
+    };
+
+    function g1() {
+      if ($("force").value != QN) QN = $("force").value;
+      if ($("exceptions").value != g8) g8 = $("exceptions").value;
+      var wq = $("sourceText").value;
+      self.status = gM["source"].name + " ->" + gM["dest"].name;
+      var Ot = wq;
+      if (!Oa[gM["source"].name].unicode) {
+        Ot = Ot.Q5();
+      }
+      Ot = Ot.Ng(gM["source"].name, gM["dest"].name);
+      if (!Oa[gM["source"].name].unicode) {
+        Ot = Ot.Nf();
+      }
+      $("destText").value = Ot;
+      Nl(false);
+    };
+
+    function hL() {
+      $('sourcetag').innerHTML = gf("source");
+      $('desttag').innerHTML = gf("dest");
+      NO($("source"), "WinInnwa");
+      NO($("dest"), "Zawgyi");
+      $("exceptions").value = g8;
+      $("force").value = QN;
+      if (/\?beta/i.test(location.href)) gb();
+    };
+    var QR = {};
+    var QX = {};
+    var h7 = {};
+
+    function gb() {
+      var Ot = ["QE", "NQ", "g8"];
+      for (var j = 0; j < Ot.length; j++) {
+        var wM = eval(Ot[j]).split(",");
+        for (var i = 0; i < wM.length; i++) {
+          if (!/[^a-z]/.test(wM[i])) {
+            QX[wM[i].toLowerCase()] = 1;
+          }
+        }
+      }
+      var wM = QN.split(",");
+      for (var i = 0; i < wM.length; i++) {
+        h7[wM[i]] = 1;
+      }
+    }
+    if (/\?beta/i.test(location.href)) {
+      $("wR").style.display = "";
+      $("wL").style.display = "";
+      $("w3").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

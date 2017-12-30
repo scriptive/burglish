@@ -1,0 +1,97 @@
+input, textarea {
+  vertical-align: middle!important;
+}
+
+.g7 {
+  text-align: left;
+  float: left;
+  position: absolute;
+  color: #000;
+  background-color: #e5ecf9;
+  max-height: 450;
+  min-height: 20;
+  overflow: visible;
+  padding: 3px;
+  visibility: hidden;
+  cursor: pointer;
+  font: 13px/1.6em Zawgyi-One, Arial, Sans-Serif;
+  z-index: 100;
+}
+
+.gH {
+  float: left;
+  background-color: #d7eaf9;
+  padding: 1px;
+  width: 150;
+  border: #87CEFA solid 1px;
+}
+
+.gV {
+  float: left;
+  background-color: #e5ecf9;
+  padding: 1px;
+  width: 150;
+  border: #e5ecf9 solid 1px;
+}
+
+.Nh {
+  background-color: #87CEFA;
+}
+
+.ga {
+  background-color: #e5ecf9;
+}
+
+.ge {
+  background-color: #00FFCC;
+  padding: 1px;
+  border: #87CEFA solid 1px;
+  overflow: auto;
+}
+
+.gk {
+  padding: 5px;
+  background-color: #808080;
+  position: relative;
+}
+
+.gk div {
+  background-color: #a0a0a0;
+}
+
+.gk span {
+  float: left;
+  width: 38px;
+  padding: 1px;
+  margin: 2px 3px 2px 3px;
+  background-color: #101010;
+  color: Yellow;
+  cursor: pointer;
+  text-align: center;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.Zawgyi {
+  font: 16px/1.6em Zawgyi-One!important;
+}
+
+.Myanmar3 {
+  font: 16px/1.8em Myanmar3, Padauk, Parabaik!important;
+}
+
+.Padauk {
+  font: 16px/1.6em Padauk!important;
+}
+
+.Parabaik {
+  font: 16px/1.6em Parabaik!important;
+}
+
+.UniBurma {
+  font: 16px/1.6em UniBurma!important;
+}
+
+.MyaZedi {
+  font: 16px/1.6em MyaZedi!important;
+}

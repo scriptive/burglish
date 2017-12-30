@@ -1,0 +1,21 @@
+function QC(hi, Or, OJ, QM, QK) {
+  OJ = OJ || '';
+  QM = QM || 0;
+  QK = QK ? (QK - 1) : 0;
+  hi.focus();
+  var wN = "​‌​";
+  var g0 = doc.selection.createRange();
+  g0.moveStart("character", -QK);
+  var s2 = g0.text;
+  doc.selection.createRange().text = g0.text + wN;
+  var NS = hi.value.indexOf(wN) - QK;
+  var s1 = hi.value.substring(0, NS - QM - s2.length);
+  var s3 = hi.value.substring(NS + wN.length, hi.value.length);
+  hi.value = s1 + Or + s2 + OJ + s3;
+  g0 = hi.createTextRange();
+  g0.collapse(true);
+  var wk = s1.split("\r\n").length - 1;
+  g0.moveStart("character", NS + (Or.length - QM) - wk);
+  g0.select();
+  return false;
+};

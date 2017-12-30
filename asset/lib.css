@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  height: 100%;
+  margin-bottom: 1px;
+}
+
+body {
+  font: 13px/1.6em Zawgyi-One, Arial, Verdana, Sans-Serif;
+  background-color: #E4EDF0;
+}
+
+table {
+  font: 13px/1.6em Zawgyi-One, Arial, Verdana, Sans-Serif;
+  font-size: 100%;
+  text-align: center;
+  width: 85%;
+  border-collapse: collapse;
+}
+
+td, th {
+  font: 13px/1.6em Zawgyi-One, Arial, Verdana, Sans-Serif;
+}
+
+h1 {
+  text-align: center;
+  color: #000;
+  border-bottom: thin black solid;
+  padding: 5pt;
+  margin: 5pt;
+}
+
+.section {
+  background: #ffffff;
+  padding: 10pt;
+  margin: 40pt;
+}
