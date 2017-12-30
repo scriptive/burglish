@@ -36,6 +36,7 @@ function gx(OT) {
   for (var x in OD[wx.id]["Qa"]) {
     var li = eCreate("li");
     li.setAttribute('id','chk' + wx.id + x);
+    li.setAttribute('class',OD[wx.id]["Qa"][x].class);
     li.setAttribute('data-id',x);
     li.setAttribute('data-title',OD[wx.id]["Qa"][x].text);
     li.onclick = function(e){
@@ -58,22 +59,26 @@ function gx(OT) {
   if (OD[OT.id]["KY"]) {
     var li = eCreate("li");
     li.setAttribute('id','btn' + wx.id + x);
+    li.setAttribute('data-title','insert BBCode');
+    li.setAttribute('class','icon-insert-bbcode');
     li.onclick = function(e){
       ND();
     };
-    li.appendChild(doc.createTextNode('Add Font BBCode'));
     inputOptions.appendChild(li);
   }
   // if (OD[OT.id]["KY"]) {
   //   wo += ' <input id="btn' + wx.id + x + '" ' + OD[wx.id]["wv"] + ' type="button" onclick="ND();" value="Add Font BBCode"><\/input> ';
   // }
+  // Syntax correction
   var li = eCreate("li");
   li.setAttribute('id','btn' + wx.id + x+ OD[wx.id]["wv"]);
+  li.setAttribute('class','icon-correct-syntax');
   li.onclick = function(e){
     gL();
   };
   li.appendChild(doc.createTextNode('Correct Syntax!'));
   inputOptions.appendChild(li);
+
   // wo += ' <input id="btn' + wx.id + x + '" ' + OD[wx.id]["wv"] + ' type="button" onclick="gL();" value="Correct Syntax!"><\/input> ';
   // if (OD[OT.id]["Nt"] != false) wo += " Burglish v" + gv;
   // wo += "<\/span>";

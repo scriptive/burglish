@@ -1,7 +1,7 @@
 output initiate
 =================
 int.NO -> UI, Method
-int.gf
+int.gf -> font list UI, Method
 
 input initiate
 =================
@@ -22,7 +22,22 @@ $(id).style.fontFamily = (Oa[QU]? Oa[QU].css.join(",") :'');
 // textarea.style.fontSize = (Oa[gM[e].name] ? Oa[gM[e].name].QG : 12) + 'pt';
 
 ```
+icon
+-----
+menu,
+icon-show-tips -> tips,
+icon-known-syllable -> Known Syllables Only,
+icon-correct-syntax -> Correct Syntax!
+icon-typewriter ->
+icon-character-list ->
+icon-follow-cursor ->
 
+icon-show-filter -> show more feature
+icon-switch-fonts -> Switch input and output fonts
+icon-convert-normal -> Convert
+icon-convert-filter -> Convert and using user filters
+icon-convert-code -> Character Codes
+icon-convert-escape -> Escape Unicode
 
 ```javascript
 'String'.Ng("source", 'target', {"Qv": true});

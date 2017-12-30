@@ -5,6 +5,8 @@
     <title>Burglish</title>
     <script src="js/burglish.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/burglish.css">
+    <link rel="stylesheet" href="img/burglish.css">
+    <link rel="stylesheet" href="img/animation.css">
   </head>
   <body>
     <div class="burglish">
@@ -13,12 +15,15 @@
           <div>
             <ol id="source"></ol>
             <ol id="sourceOptions"></ol>
+            <ol id="sourceSwitch">
+              <!-- <li class="icon-switch-fonts" data-title="Switch input and output fonts"></li> -->
+            </ol>
           </div>
           <div class="context">
             <textarea id="sourceText"></textarea>
           </div>
         </div>
-        <div class="des">
+        <div class="tar">
           <div>
             <ol id="target"></ol>
             <ol id="targetOptions"></ol>
@@ -28,17 +33,19 @@
           </div>
         </div>
       </div>
-      <!-- <div class="options" id="hW">
-        burglish="true" autocomplete="off" id="sourceText" onfocus="onFocus(this);" onblur="Ki(this);" onmouseover="NE(this);" onmouseup="QF(event,this);" onkeyup="return QF(event,this);" onkeydown="return Ns(event,this);
-      </div> -->
-      <div class="options" id="wL" style="display:none;">
+      <!-- <div class="options" id="hW"></div> -->
+      <div class="filters" id="wL">
         <div class="exceptions">
-          <p>NZ list not to Qx(seperated by commas),case ignore</p>
-          <textarea id="exceptions" style="width:90%"></textarea>
+          <div>
+            <p>NZ list not to Qx(seperated by commas),case ignore</p>
+            <textarea id="exceptions"></textarea>
+          </div>
         </div>
         <div class="force">
-          <p>Force Qx list(seperated by commas),case sensitive</p>
-          <textarea id="force" style="width:90%"></textarea>
+          <div>
+            <p>Force Qx list(seperated by commas),case sensitive</p>
+            <textarea id="force"></textarea>
+          </div>
         </div>
       </div>
     </div>

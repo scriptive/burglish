@@ -1,4 +1,3 @@
-
 (function(os,win,doc) {
   'use strict';
   // lib,burglish,burmese,syllable
@@ -15,77 +14,81 @@
       source:'source',
       target:'target',
       input:'sourceOptions',
+      swap:'sourceSwitch',
       output:'targetOptions',
       text:'Text',
       force:'force',
       exception:'exceptions'
     },
-    task:{
-      Option:{
-        text:'Option',
-        class:'option',
-        handler:function(e){
-          // console.log('Option');
-          // console.log(e.getAttribute('class'));
-          // e.getAttribute('class').indexOf("active");
-          gJ.basic=e.classList.contains("active");
-          e.classList.toggle("active");
-          if (gJ.basic){
-            // e.classList.remove('active');
-              $("wR").style.display = "none";
-              $("wL").style.display = "none";
-          } else {
-            // e.classList.add('active');
-            $("wR").removeAttribute("style");
-            $("wL").removeAttribute("style");
-            gb();
-          }
-        }
-      },
-      Switch:{
-        text:'Switch',
+    taskSwap:{
+      switchFont:{
+        title:'switch Input and Output fonts',
+        class:'icon-switch-fonts',
         handler:function(){
           var t = gM.target.name, s = gM.source.name;
           NO('source',t); NO('target',s);
         }
+      }
+    },
+    taskOption:{
+      showFilter:{
+        title:'show filter',
+        class:'option icon-show-filter',
+        handler:function(e){
+          gJ.basic=e.classList.contains("active");
+          e.classList.toggle("active");
+          if (gJ.basic){
+            $("wL").classList.remove('active');
+              // $("wR").style.display = "none";
+            $("wR").style.display = "none";
+          } else {
+            $("wL").classList.add('active');
+            // $("wR").style.display = "block";
+            // $("wR").style.display = "block";
+            $("wR").removeAttribute("style");
+            // $("wL").removeAttribute("style");
+            gb();
+          }
+        }
+      },
+      charCode:{
+        class:'icon-convert-code',
+        title:'character Code',
+        handler:function(){
+          g9();
+        }
+      },
+      escapeUnicode:{
+        class:'icon-convert-escape',
+        title:'escape Unicode',
+        handler:function(){
+          N3();
+        }
+      },
+      convertWithFilter:{
+        class:'icon-convert-filter',
+        title:'Convert using filter',
+        id:'wR',
+        style:'display:none;',
+        handler:function(){Nl(true, "g1");}
       },
       Convert:{
         text:'Convert',
+        class:'icon-convert-normal',
+        // class:'icon-emo-happy',
         handler:function(){
           Qx();
-          // console.log('Convert');
-        }
-      },
-      CharCode:{
-        text:'CharCode',
-        handler:function(){
-          g9();
-          // console.log('CharCode');
-        }
-      },
-      EscapeUnicode:{
-        text:'Escape Unicode',
-        handler:function(){
-          N3();
-          // console.log('EscapeUnicode');
-        }
-      },
-      ConvertAdvanced:{
-        text:'Convert Advanced',
-        id:'wR',
-        style:'display:none;',
-        handler:function(){
-          Nl(true, "g1");
-          // console.log('ConvertAdvanced');
         }
       }
     },
     initTask: function() {
-      var task = this.task,
+      var task = app.taskOption,
       container = $(app.id.output),
       promises = Object.keys(task).map(function(n, i) {
         var li = eCreate("li"), o = task[n];
-        li.appendChild(doc.createTextNode(o.text));
+        if (o.hasOwnProperty('text')){
+          li.appendChild(doc.createTextNode(o.text));
+        }
         if (o.hasOwnProperty('class')){
           li.setAttribute('class', o.class);
         }
@@ -95,12 +98,40 @@
         if (o.hasOwnProperty('style')){
           li.setAttribute('style', o.style);
         }
+        if (o.hasOwnProperty('title')){
+          li.setAttribute('data-title', o.title);
+        }
         li.addEventListener("click", function(event){
           if (o.hasOwnProperty('handler')) o.handler(event.target);
         });
         container.appendChild(li);
       });
       Promise.all(promises).then(function(){
+        var task = app.taskSwap,
+        container = $(app.id.swap),
+        promises = Object.keys(task).map(function(n, i) {
+          var li = eCreate("li"), o = task[n];
+          if (o.hasOwnProperty('text')){
+            li.appendChild(doc.createTextNode(o.text));
+          }
+          if (o.hasOwnProperty('class')){
+            li.setAttribute('class', o.class);
+          }
+          if (o.hasOwnProperty('id')){
+            li.setAttribute('id', o.id);
+          }
+          if (o.hasOwnProperty('style')){
+            li.setAttribute('style', o.style);
+          }
+          if (o.hasOwnProperty('title')){
+            li.setAttribute('data-title', o.title);
+          }
+          li.addEventListener("click", function(event){
+            if (o.hasOwnProperty('handler')) o.handler(event.target);
+          });
+          container.appendChild(li);
+        });
+      }).then(function(){
         NO(app.id.source, "Zawgyi");
         NO(app.id.target, "WinInnwa");
         $(app.id.exception).value = g8;
@@ -110,7 +141,7 @@
         // app.id.force
         // app.id.exception
       }).then(function(){
-        gZ({id: eText(app.id.source),N_: true,self: true,KY: false,ows: 20});
+        gZ({id: eText(app.id.source),N_: true,self: true,KY: true,rows: 20});
       });
     },
     init:function(a){

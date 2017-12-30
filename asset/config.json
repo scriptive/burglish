@@ -1,0 +1,233 @@
+{
+  "name": "burglish",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "copyright": "Burglish",
+  "glyphs": [
+    {
+      "uid": "2cfb3f2b46b34a1790aec0aa846297b6",
+      "css": "menu",
+      "code": 59400,
+      "src": "entypo"
+    },
+    {
+      "uid": "e99461abfef3923546da8d745372c995",
+      "css": "config",
+      "code": 59449,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "513ac180ff85bd275f2b736720cbbf5e",
+      "css": "home",
+      "code": 59396,
+      "src": "entypo"
+    },
+    {
+      "uid": "465bb89b6f204234e5787c326b4ae54c",
+      "css": "refresh",
+      "code": 59428,
+      "src": "entypo"
+    },
+    {
+      "uid": "b714be5a812a474811604f700dfc87ce",
+      "css": "slim-left",
+      "code": 61447,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "37910a1398001a5ccb541cb2a253a2c7",
+      "css": "slim-right",
+      "code": 61446,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "9bc2902722abb366a213a052ade360bc",
+      "css": "loading",
+      "code": 59451,
+      "src": "fontelico"
+    },
+    {
+      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+      "css": "lookup",
+      "code": 59453,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "2a4e6c99b732a57da40e32fa2a7800a4",
+      "css": "toggle-off",
+      "code": 61956,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3256ef03b16e7ab51235bc7378b53bb5",
+      "css": "toggle-on",
+      "code": 61957,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "474656633f79ea2f1dad59ff63f6bf07",
+      "css": "star",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "559647a6f430b3aeadbecd67194451dd",
+      "css": "panel",
+      "code": 61641,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ddecf5ad7935e3fb1b70dac6ed00d06a",
+      "css": "language",
+      "code": 59413,
+      "src": "entypo"
+    },
+    {
+      "uid": "11d74f891bce30f1bdf73d3259d59ed5",
+      "css": "user",
+      "code": 61537,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "d94334f23acba022bfd68e49d76b31bb",
+      "css": "github",
+      "code": 62208,
+      "src": "entypo"
+    },
+    {
+      "uid": "9396b2d8849e0213a0f11c5fd7fcc522",
+      "css": "tasks",
+      "code": 61614,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "1d2a6c3d9236b88b0f185c7c4530fa52",
+      "css": "flag",
+      "code": 59394,
+      "src": "entypo"
+    },
+    {
+      "uid": "875ab0f6d417223f6ec76ff7f0a4baed",
+      "css": "bbcode",
+      "code": 59397,
+      "src": "entypo"
+    },
+    {
+      "uid": "41d534223ef447a01af3e2f629ec70eb",
+      "css": "follow-cursor",
+      "code": 59398,
+      "src": "entypo"
+    },
+    {
+      "uid": "f4445feb55521283572ee88bc304f928",
+      "css": "floppy",
+      "code": 59401,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "47a35af762c8e06f3d152750134c8750",
+      "css": "linux",
+      "code": 61820,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "aaf371ab44841e9aaffebd179d324ce4",
+      "css": "android",
+      "code": 59402,
+      "src": "zocial"
+    },
+    {
+      "uid": "c64623255a4a7c72436b199b05296c4f",
+      "css": "emo-happy",
+      "code": 59399,
+      "src": "fontelico"
+    },
+    {
+      "uid": "da6c4728f6175a4b99b122274b8f921c",
+      "css": "convert-escape",
+      "code": 59407,
+      "src": "typicons"
+    },
+    {
+      "uid": "c1bea2b4c01d1d4bd1e4e1f79e51cdd2",
+      "css": "convert-code",
+      "code": 59408,
+      "src": "typicons"
+    },
+    {
+      "uid": "ccfaa7f5fe179987bd366051345ba985",
+      "css": "convert-normal",
+      "code": 59409,
+      "src": "typicons"
+    },
+    {
+      "uid": "7c8ccee198bdf2ba9f36c884a6c1cd95",
+      "css": "typewriter",
+      "code": 59411,
+      "src": "elusive"
+    },
+    {
+      "uid": "67f793f91864e379458a92ccc61d9ccf",
+      "css": "character-list",
+      "code": 59412,
+      "src": "typicons"
+    },
+    {
+      "uid": "e3699d145bd628d2a35d4a508b616f0c",
+      "css": "equalizer",
+      "code": 59414,
+      "src": "iconic"
+    },
+    {
+      "uid": "63b86fedd4ee9ad2105f54f4888e7088",
+      "css": "info",
+      "code": 59415,
+      "src": "entypo"
+    },
+    {
+      "uid": "80451d627470ea7f977a263fdb771d7b",
+      "css": "known-syllable",
+      "code": 59416,
+      "src": "entypo"
+    },
+    {
+      "uid": "4109c474ff99cad28fd5a2c38af2ec6f",
+      "css": "show-filter",
+      "code": 61616,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0ddd3e8201ccc7d41f7b7c9d27eca6c1",
+      "css": "correct-syntax",
+      "code": 59418,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "5386cf333c67332c278b798c9fded7e5",
+      "css": "switch-fonts",
+      "code": 59395,
+      "src": "iconic"
+    },
+    {
+      "uid": "e45a44236f3f1ac013a1287bb60cd965",
+      "css": "convert-filter",
+      "code": 59410,
+      "src": "typicons"
+    },
+    {
+      "uid": "599d6c088f4a1c64611b989459d65f6b",
+      "css": "show-tips",
+      "code": 59393,
+      "src": "elusive"
+    },
+    {
+      "uid": "7034e4d22866af82bef811f52fb1ba46",
+      "css": "insert-bbcode",
+      "code": 61729,
+      "src": "fontawesome"
+    }
+  ]
+}

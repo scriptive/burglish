@@ -19,23 +19,29 @@ function gZ(OT, g5) {
     'wv': '',
     'Qa': {
       'K6': {
-        text: 'Burglish Menu(F2)'
+        text: 'Burglish menu(F2)',
+        class: 'icon-tasks'
       },
       'K3': {
-        text: 'Tips'
+        text: 'Tips',
+        class: 'icon-show-tips'
       },
       'Qe': {
-        text: 'Follow Cursor'
+        text: 'follow Cursor',
+        class: 'icon-follow-cursor'
       },
       'hq': {
-        text: 'Known Syllables Only'
+        text: 'only known Syllables',
+        class: 'icon-known-syllable'
       },
       'NW': {
-        text: 'Characters List',
+        text: 'characters list',
+        class: 'icon-character-list',
         cb: 'NM'
       },
       'Qo': {
-        text: 'TypeWriter(F8)'
+        text: 'TypeWriter(F8)',
+        class: 'icon-typewriter'
       }
     },
     // 'gM': 'Zawgyi',

@@ -327,7 +327,7 @@ var Oa = {
     "QJ": "Parabaik",
     "unicode": 51,
     "wg": true,
-    "QG": 14,
+    "QG": 12,
     "inherit": "Myanmar3",
     "wW": "(ParabaikSans,...)",
     "css": ["Parabaik", "ParabaikSans"]
