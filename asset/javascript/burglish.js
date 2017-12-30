@@ -81,7 +81,7 @@
         }
       }
     },
-    initTask: function() {
+    intTask: function() {
       var task = app.taskOption,
       container = $(app.id.output),
       promises = Object.keys(task).map(function(n, i) {
@@ -136,35 +136,22 @@
         NO(app.id.target, "WinInnwa");
         $(app.id.exception).value = g8;
         $(app.id.force).value = QN;
-        // eText(app.id.source)
-        // eText(app.id.target)
-        // app.id.force
-        // app.id.exception
       }).then(function(){
-        gZ({id: eText(app.id.source),N_: true,self: true,KY: true,rows: 20});
+        gZ({id: eText(app.id.source),N_: true,self: true,KY:false,rows: 20});
       });
     },
-    init:function(a){
+    int:function(a){
       app.request.text=a;
       return app.request;
     },
     request:{
       load:function(b,c){
-        app.initTask();
+        app.intTask();
       },
       convert:function(b,c){
-        // return 'text'.Ng('Zawgyi','Myanmar3');
         return this.text.Ng(b,c);
       }
     }
   };
-  function testing(){
-    console.log('yes');
-  }
-  win[os] = app.init;
+  win[os]=app.int;
 }("Burglish",window,document));
-document.addEventListener("DOMContentLoaded", function(event) {
-  new Burglish().load();
-  // console.log(Burglish('အမည္မေဖာ္လိုသူ').convert('Zawgyi','Myanmar3'));
-  // console.log('အမည္မေဖာ္လိုသူ');
-});
