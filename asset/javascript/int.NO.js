@@ -9,9 +9,9 @@ function NO(e, Qr, QU) {
     if (Oa[QU]) {
       if (Oa[QU].wg && Oa[QU].unicode){
         hV(QU);
-        $(app.id.input).classList.remove('inactive');
+        $(eOption()).classList.remove('inactive');
       } else {
-        $(app.id.input).classList.add('inactive');
+        $(eOption()).classList.add('inactive');
       }
     }
   }

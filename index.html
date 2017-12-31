@@ -17,7 +17,7 @@
         <div class="src">
           <div>
             <ol id="source"></ol>
-            <ol id="sourceOptions"></ol>
+            <ol id="sourceOption"></ol>
             <ol id="sourceSwitch">
               <!-- <li class="icon-switch-fonts" data-title="Switch input and output fonts"></li> -->
             </ol>
@@ -29,7 +29,7 @@
         <div class="tar">
           <div>
             <ol id="target"></ol>
-            <ol id="targetOptions"></ol>
+            <ol id="targetOption"></ol>
           </div>
           <div class="context">
             <textarea id="targetText"></textarea>
@@ -37,17 +37,17 @@
         </div>
       </div>
       <!-- <div class="options" id="hW"></div> -->
-      <div class="filters" id="wL">
+      <div class="filters wL" id="sourceFilter">
         <div class="exceptions">
           <div>
-            <p>NZ list not to Qx(seperated by commas),case ignore</p>
-            <textarea id="exceptions"></textarea>
+            <p>NZ list not to Qx(seperated by commas),case ignore -> sourceExcept</p>
+            <textarea id="sourceExcept"></textarea>
           </div>
         </div>
         <div class="force">
           <div>
-            <p>Force Qx list(seperated by commas),case sensitive</p>
-            <textarea id="force"></textarea>
+            <p>Force Qx list(seperated by commas),case sensitive -> sourceForce</p>
+            <textarea id="sourceForce"></textarea>
           </div>
         </div>
       </div>

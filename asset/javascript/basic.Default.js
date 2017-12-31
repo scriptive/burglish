@@ -26,11 +26,19 @@ function eEmpty(e) {
   return e;
 };
 function eText(e) {
-  if (e){
-    return e+app.id.text
-  }
-  return app.id.text;
-// app.id.target+app.id.text
+  return (e?e:eSrc)+eTxt;
+};
+function eOption(e) {
+  return (e?e:eSrc)+eOpt;
+};
+function eSwap(e) {
+  return (e?e:eSrc)+eSwp;
+};
+function eForce(e) {
+  return (e?e:eSrc)+eFoc;
+};
+function eExcept(e) {
+  return (e?e:eSrc)+eExc;
 };
 // =require basic.Ku.js
 // =require basic.g9.js

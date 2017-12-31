@@ -45,8 +45,8 @@ function gZ(OT, g5) {
       }
     },
     // 'gM': 'Zawgyi',
-    // 'Ow': 'WinInnwa'
-    'gM': gM.source.name,
+    // 'Ow': 'WinInnwa'[eSrc]
+    'gM': gM[eSrc].name,
     'Ow': gM.target.name
   };
   for (var i in OT) {

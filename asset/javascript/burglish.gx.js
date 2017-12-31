@@ -28,7 +28,7 @@ function gx(OT) {
   wx.onkeydown = function(event){
     return Ns(event,this);
   };
-  var inputOptions = $(app.id.input);
+  var inputOptions = $(eOption());
   if (OD[wx.id]["Q_"]){
     inputOptions.style.display = "none";
   }

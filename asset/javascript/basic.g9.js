@@ -1,5 +1,5 @@
 function g9() {
-  var hY = $(eText(app.id.source)).value;
+  var hY = $(eText(eSrc)).value;
   var ww = "";
   for (var i = 0; i < hY.length; i++) {
     var code = hY.charCodeAt(i);
@@ -9,5 +9,5 @@ function g9() {
       ww += "'" + hY.charCodeAt(i) + "',";
     }
   };
-  $(eText(app.id.target)).value = ww;
+  $(eText(eTar)).value = ww;
 };

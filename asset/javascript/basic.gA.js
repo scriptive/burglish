@@ -1,3 +1,3 @@
 function gA() {
-  $(eText(app.id.target)).value = unescape($(eText(app.id.source)).value);
+  $(eText(eTar)).value = unescape($(eText(eSrc)).value);
 };
