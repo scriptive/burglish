@@ -2,7 +2,7 @@
 function N2(index) {
   OD[OD.x]["hC"] = index;
   if (index < 0) {
-    Kx(OD.x + "drop");
+    Kx(OD.x + "suggest");
     OD[OD.x]["hC"] = -1;
     return false;
   }
@@ -17,6 +17,6 @@ function N2(index) {
     // $("col" + OD.x + i).className = i == Math.floor(OD[OD.x]["hC"] / 10) ? "gH" : "gV";
     if(itemX)itemX.className = i == Math.floor(OD[OD.x]["hC"] / 10) ? "gH" : "gV";
   }
-  wQ(OD.x + "drop");
+  wQ(OD.x + "suggest");
   return false;
 };

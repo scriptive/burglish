@@ -1,10 +1,12 @@
 function hX(wx) {
   var KF = $(OD.x);
   var h9 = 0;
-  if (!OD[OD.x]["KV"]) {
+  if (!OD[OD.x]["KV"]) return;
+  var wG = OD[OD.x]["list"][OD[OD.x]["hC"]] != null ? OD[OD.x]["list"][OD[OD.x]["hC"]] : OD[OD.x]["list"][0];
+  if (!wG) {
+    OD[OD.x]["KV"] ='';
     return;
   }
-  var wG = OD[OD.x]["list"][OD[OD.x]["hC"]] != null ? OD[OD.x]["list"][OD[OD.x]["hC"]] : OD[OD.x]["list"][0];
   var KU = wG[1].replace(/\-/g, '');
   var hU = OD[OD.x]["Ke"];
   if (OD[OD.x]["lower"] && hU.length > 0) {
@@ -77,10 +79,7 @@ function hX(wx) {
       Kj = '္' + KU;
     }
   }
-  if (!wG) {
-    OD[OD.x]["KV"] = "";
-    return;
-  }
+
   if (typeof(wG) != "string") wG = KU;
   wG = OD[OD.x]["lower"] ? Kj : wG;
   wG = wG.replace(/\-/g, '');

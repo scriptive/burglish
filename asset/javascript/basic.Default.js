@@ -40,6 +40,15 @@ function eForce(e) {
 function eExcept(e) {
   return (e?e:eSrc)+eExc;
 };
+function classList(e) {
+  return (typeof e == 'object'?e:$(e)).classList;
+};
+function classContain(e,c) {
+  return classList(e).contains(c?c:'active');
+};
+function classToggle(e,c,t) {
+  return classList(e).toggle(c?c:'active',t);
+};
 // =require basic.Ku.js
 // =require basic.g9.js
 // =require basic.gA.js

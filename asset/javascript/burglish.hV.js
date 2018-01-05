@@ -9,8 +9,8 @@ function hV(O4) {
   //   i--;
   // }
   // OT.style.fontSize = Oa[O4].QG + "pt";
-  // $(OD.x + "span").style.fontFamily = $(OD.x + "drop").style.fontFamily = String(Oa[O4]["css"]);
-  // $(OD.x + "span").style.fontSize = $(OD.x + "drop").style.fontSize = Oa[O4].QG + "pt";
+  // $(OD.x + "span").style.fontFamily = $(OD.x + "suggest").style.fontFamily = String(Oa[O4]["css"]);
+  // $(OD.x + "span").style.fontSize = $(OD.x + "suggest").style.fontSize = Oa[O4].QG + "pt";
   // if ($("help" + OD.x)) {
   //   $("help" + OD.x).style.fontFamily = String(Oa[O4]["css"]);
   //   $("help" + OD.x).style.fontSize = Oa[O4].QG + "pt";
@@ -22,6 +22,7 @@ function hV(O4) {
     }).split("\f");
   }
   // if (!K3[hz]) K3[hz] = K3["Myanmar3"];
-  if ($("chk" + OD.x + 'NW').classList.contains('active'))NM(OD.x, 'NW');
+  if (classContain("chk" + OD.x + 'NW'))NM(OD.x, 'NW');
+
   return false;
 };

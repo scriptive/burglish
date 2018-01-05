@@ -4,12 +4,12 @@ function NP(wx) {
   var KV = OD[OD.x]["KV"];
   if (!KV) {
     if ($("burmese") && !OD[OD.x]["self"]) $("burmese").value = "";
-    Kx(OD.x + "drop");
+    Kx(OD.x + "suggest");
     return;
   }
   if (/\d/.test(KV) && OD.gz) {
     OD[OD.x]['KV'] = '';
-    Kx(OD.x + "drop");
+    Kx(OD.x + "suggest");
     return;
   }
   var Kf = gW(wx, KV);

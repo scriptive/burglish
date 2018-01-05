@@ -1055,12 +1055,12 @@ var Oa = {
     "wg": false
   }
 };
-(function() {
-  for (var i in Oa)
-    if (Oa[i]["inherit"])
-      for (var x in Oa[Oa[i]["inherit"]])
-        if (!Oa[i][x]) Oa[i][x] = Oa[Oa[i]["inherit"]][x];
-})();
+// (function() {
+//   for (var i in Oa)
+//     if (Oa[i]["inherit"])
+//       for (var x in Oa[Oa[i]["inherit"]])
+//         if (!Oa[i][x]) Oa[i][x] = Oa[Oa[i]["inherit"]][x];
+// })();
 var hz = "Zawgyi";
 var Qc = {
   en: ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december", "\,", "am", "pm"],

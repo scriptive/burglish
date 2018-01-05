@@ -18,10 +18,7 @@ function gf(id) {
     ol.addEventListener("click", function(e){
       var el = e.target || e.srcElement;
       var elP =  el.parentElement;
-      if (el.dataset.detail && !el.classList.contains('active')) {
-        // console.log(elP.childNodes);
-        // console.log(elP.getElementsByClassName('active'));
-        // el.classList.add('active');
+      if (el.dataset.detail && !classContain(el)) {
         while(elP.getElementsByClassName('active').length > 0){
           elP.getElementsByClassName('active')[0].classList.remove('active');
         }

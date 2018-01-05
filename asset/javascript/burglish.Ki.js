@@ -1,4 +1,4 @@
 function Ki(wx) {
-  if ($(wx.id + "drop")) Kx(wx.id + "drop");
+  if ($(wx.id + "suggest")) Kx(wx.id + "suggest");
   return false;
 };

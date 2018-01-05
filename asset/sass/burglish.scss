@@ -1,10 +1,8 @@
-@import "Config";
-@import "font.Face";
-
+@import "Common";
 body {
   padding: 0;
   margin: 0;
-  // background-color:lighten($ColorMain,40%);
+  // background-color:lighten($ColorMain,45%);
   border-top:4px solid $ColorMain;
   font-family: $Font;
   >div{
@@ -12,6 +10,7 @@ body {
   }
 }
 div.burglish{
+  // background-color: red;
   display: table; width: 96%;
   margin:2%;
   max-width: 1600px;
@@ -27,18 +26,20 @@ div.burglish{
       }
     }
     &.workspace{
+      position: relative;
       >div{
+        position: inherit;
         >div {
+          position: relative;
           &:nth-child(1){
             vertical-align: middle;
             // NOTE: option
-            z-index: 10;
+            // z-index: 11;
             >ol{
               font-size: 15px;
               padding: 0;
               margin: 4px;
               list-style: none;
-              // display: inline-block;
               display: inline-table;
               @include user-select();
               position: inherit;
@@ -73,8 +74,8 @@ div.burglish{
                     text-align: center;
                     padding:5px 7px;
                     font-size: 12px;
-                    // content: attr(data-title);
-                    content: "Current font not support these functions";
+                    content: attr(data-title);
+                    // content: "does not support these functions";
                     color:#666;
                     text-shadow:0px 0px 1px lighten(#ccc,1%);
                   }
@@ -83,12 +84,9 @@ div.burglish{
                   opacity: 0.8;
                 }
               }
-              // background-color: #fff;
               >li{
-                // display: inline-block;
                 display: table-cell;
                 vertical-align: middle;
-                // padding: 0px;
                 padding: 5px;
 
                 // border-spacing: 5px;
@@ -107,6 +105,7 @@ div.burglish{
                   background-color: lighten($ColorMain,15%);
                   color: darken($ColorSecond,20%);
                   padding-right: 7px;
+                  position: relative;
                   &::after{
                     position: absolute;
                     top: -1px;
@@ -136,7 +135,7 @@ div.burglish{
                     margin: 0;
                     padding: 3px;
                     padding-top: 10px;
-                    min-width: 100%;
+                    // min-width: 100%;
                     border-radius:0 2px 2px 2px;
                     background-color: lighten($ColorMain,25%);
                     li{
@@ -218,6 +217,9 @@ div.burglish{
                     }
                     &.active{
                       background-color: lighten($ColorMain,15%);
+                      &::before{
+                        text-shadow:1px 0px 1px lighten(#666,1%);
+                      }
                     }
                   }
                   &:not([data-title]){
@@ -292,11 +294,13 @@ div.burglish{
             }
           }
           &:nth-child(2){
+            position: inherit;
             // NOTE: input->textarea
-            z-index: 9;
+            // z-index: 0;
             overflow: visible;
             textarea {
-              position:relative;
+              // z-index: 1;
+              position:inherit;
               display: block;
               padding: 1%;
               width: 98%;
@@ -317,52 +321,21 @@ div.burglish{
               }
             }
             div{
-              position: inherit;
-              background-color: lighten(#ccc,15%);
-              &#hQ{
-                cursor: move;
-                z-index: 12;
-                padding:5px 1px;
-                ol{
-                  display: block;
-                  padding: 0; margin: 0;
-                  text-align: center;
-                  &[data-title]{
-                    &::before{
-                      display: block;
-                      padding: 5px 2%;
-                      color: #666;
-                      font-size: 13px;
-                      content: attr(data-title);
-                      border-bottom: 1px solid #fff;
-                    }
-                  }
-                  li {
-                    display: inline-block;
-                    margin: 1px;
-                    width: 35px;
-                    height: 30px;
-                    // padding: 2px 0;
-                    line-height: 25px;
-                    background-color: lighten(#ccc,17%);
-                    &:hover{
-                      background-color: lighten(#ccc,7%);
-                    }
-                  }
-                }
-              }
-              &#sourceTextdrop{
-                z-index: 13;
+              position: relative;
+              &#sourceTextsuggest{
+                z-index:10;
+                margin: 0 1px;
                 div {
-                  position: absolute;
+                  background-color: lighten(#ccc,15%);
+                  // position: absolute;
                   // top: 0; left: 0;
                   padding: 0; margin: 0;
+                  @include box-shadow(inset,0px, -1px, 1px, 0px, lighten(#ccc,1%));
                   // z-index: 13;
                   display: block;
-                  width: 100%;
+                  // width: 100%;
                   ol{
-                    padding: 0px;
-                    margin: 0px;
+                    padding: 1px; margin: 0px;
                     list-style: none;
                     &[data-title]{
                       &::before{
@@ -371,23 +344,27 @@ div.burglish{
                         color: #666;
                         font-size: 13px;
                         content: attr(data-title);
-                        border-bottom: 1px solid #fff;
+                        border-bottom: 1px dotted lighten(#ccc,5%);
                       }
                     }
                     li {
-                      padding: 1px 2%;
+                      padding: 2px 7px;
                       line-height: 23px;
                       cursor: default;
                       &[data-fn]{
                         &::before{
                           content: attr(data-fn);
                           display: inline-block;
-                          // margin-right: 1%;
-                          width: 15px;
-                          padding: 1px 4px;
+                          margin-right: 1%;
+                          text-align: center;
+                          width: 30px;
+                          font-size: 12px;
+                          // padding: 1px 4px;
                           // color: $ColorMain;
                           color: lighten(#666,10%);
                           // background-color: lighten(#ccc,10%);
+                          color: #fff;
+                          background-color: lighten($ColorMain,20%);
                           border-radius: 2px;
                         }
                       }
@@ -419,10 +396,62 @@ div.burglish{
                     }
                   }
                 }
-
+              }
+              &#sourceTextchar{
+                // position: absolute;
+                position: relative;
+                // bottom: 0;
+                // right: 0;
+                // width: 700px;
+                // height: 100%;
+                // width: 100%;
+                // height: 200px;
+                z-index: 7;
+                ol{
+                  position: absolute;
+                  background-color: lighten(#ccc,15%);
+                  @include box-shadow(0px, 1px, 1px, 1px, lighten(#ccc,1%));
+                  width: 100%;
+                  cursor: move;
+                  padding:10px 1px 5px 1px;
+                  display: block;
+                  margin: 0;
+                  text-align: center;
+                  // &[data-title]{
+                  //   &::before{
+                  //     display: block;
+                  //     padding: 5px 2%;
+                  //     color: #666;
+                  //     font-size: 13px;
+                  //     content: attr(data-title);
+                  //   }
+                  // }
+                  li {
+                    display: inline-block;
+                    margin: 1px;
+                    min-width: 35px;
+                    // height: 20px;
+                    // padding: 2px 0;
+                    line-height: 37px;
+                    background-color: lighten(#ccc,19%);
+                    text-shadow:0px 1px 1px #ccc;
+                    // color: $ColorMain;
+                    // color: #ccc;
+                    color: #666;
+                    &:hover{
+                      background-color: lighten(#ccc,7%);
+                    }
+                  }
+                }
               }
             }
           }
+        }
+        &:nth-child(1){
+          // z-index: 2;
+        }
+        &:nth-child(2){
+          // z-index: 1;
         }
       }
     }
@@ -431,9 +460,9 @@ div.burglish{
         display: none;
       }
       div{
+        z-index:1;
         div {
-          z-index: 4;
-          overflow: visible;
+          // overflow: visible;
           p{
             text-align: center;
             font-size: 12px;

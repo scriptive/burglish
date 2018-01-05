@@ -1,7 +1,7 @@
 function gt(OT) {
-  if (doc.selection) {
-    var range = doc.selection.createRange();
-    $(OT.id + "drop").style.top = range.offsetTop + OT.Ox;
-    $(OT.id + "drop").style.left = range.offsetLeft;
+  if (document.selection) {
+    var range = document.selection.createRange();
+    $(OT.id + "suggest").style.top = range.offsetTop + OT.Ox;
+    $(OT.id + "suggest").style.left = range.offsetLeft;
   }
 };

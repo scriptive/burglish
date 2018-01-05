@@ -20,8 +20,9 @@ function Ns(e) {
     return Oc;
   } else if (wV == 113) {
     var Kg = $("chk" + wx.id + "K6");
-    // Kg.classList.toggle('active',Kg.classList.contains('active') != false);
-    Kg.classList.toggle('active',!Kg.classList.contains('active'));
+    classToggle(Kg,null,!classContain(Kg));
+    // classToggle(Kg);
+    // console.log(Kg);
     // Kg.checked = !Kg.checked;
     gD(Kg, wx.id, "K6");
     return false;
@@ -89,16 +90,13 @@ function Ns(e) {
     OD[OD.x]["KV"] = "";
     OD[OD.x]["Km"] = 0;
     OD[OD.x]["hC"] = -1;
-    Kx(OD.x + "drop");
+    Kx(OD.x + "suggest");
     return false;
   } else if (wV == 118) {
     return false;
   } else if (wV == 119 || (OD.gz == 1 && wV == 78)) {
     var Kg = $("chk" + wx.id + "Qo");
-    // Kg.checked = !Kg.checked;
-    // Kg.classList.toggle('active',Kg.classList.contains('active'));
-    // Kg.classList.toggle('active');
-    Kg.classList.toggle('active',!Kg.classList.contains('active'));
+    classToggle(Kg,null,!classContain(Kg));
     gD(Kg, wx.id, "Qo");
     return false;
   }

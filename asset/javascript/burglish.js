@@ -9,6 +9,8 @@
   // =require syllable.Default.js
   // =require english.Default.js
   // =require language.Default.js
+
+  // Myanmar3 not support these functions
   var eSrc='source',
   eTar='target',
   eOpt='Option',
@@ -33,8 +35,8 @@
         title:'show filter',
         class:'option icon-show-filter',
         handler:function(e){
-          gJ.basic=e.classList.contains("active");
-          e.classList.toggle("active");
+          gJ.basic=classContain(e);
+          classToggle(e);
           if (gJ.basic){
             $(eSrc+eFil).classList.remove('active');
             $("wR").style.display = "none";

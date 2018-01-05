@@ -26,8 +26,6 @@ function wQ(Oz, gz) {
 
 function Kx(Oz) {
   $(Oz).style.display = "none";
-  // $(Oz).style.visibility = "hidden";
-  // $(Oz).visible = false;
 };
 
 // function N9(wd) {
@@ -136,9 +134,12 @@ var N5, Nr, g4, tx, ty;
 // =require lib.KR.js
 // =require lib.OX.js
 
-// =require lib.Qw.js
 // =require lib.gP.js
+// =require lib.Qw.js
+// require lib.Dragme.js
 
 doc.onmousedown = gP;
-doc.onmouseup = new Function("gR=false");
+// doc.onmouseup = gP(false);
+doc.onmouseup = function(){gP();};
+// doc.onmouseup = new Function("gR=false");
 gJ.lib = true;

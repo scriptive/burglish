@@ -7,5 +7,5 @@ function QO(KV, wG) {
   OD[OD.x]["KV"] = "";
   OD[OD.x]["Km"] = 0;
   OD[OD.x]["hC"] = -1;
-  Kx(OD.x + "drop");
+  Kx(OD.x + "suggest");
 };

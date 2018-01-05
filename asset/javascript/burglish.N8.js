@@ -1,6 +1,6 @@
 function N8(wx, KV, Kf) {
   var Nu = 0;
-  var Nm = eEmpty($(OD.x + "drop"));
+  var Nm = eEmpty($(OD.x + "suggest"));
   var Ks = eCreate('div');
   var ol = eCreate('ol');
   // console.log('N8');
@@ -23,13 +23,11 @@ function N8(wx, KV, Kf) {
       }
     }
   }
-
   // Ks += '<div id="col' + OD.x + '0" class="gH">';
-  // if (Kf.length == 0) Ks = "&lt;No Items available>";
   if (Kf.length == 0) {
-    var li = eCreate('li');
-    li.appendChild(doc.createTextNode('&lt;No Items available'));
-    ol.appendChild(li);
+    // var li = eCreate('li');
+    // li.appendChild(doc.createTextNode('No Items available'));
+    // ol.appendChild(li);
   }
   for (var i = 0; i < Kf.length; i++) {
     // if (i % 10 == 0 && i > 9 && i != Kf.length) {
@@ -51,7 +49,7 @@ function N8(wx, KV, Kf) {
   Ks.appendChild(ol);
   Nm.appendChild(Ks);
   if (Kf.length >= 1) {
-    wQ(OD.x + "drop");
+    wQ(OD.x + "suggest");
     OD[OD.x]["hC"] = -1;
   }
   OD[OD.x]["Km"] = Kf.length;

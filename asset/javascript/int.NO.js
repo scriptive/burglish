@@ -10,11 +10,14 @@ function NO(e, Qr, QU) {
       if (Oa[QU].wg && Oa[QU].unicode){
         hV(QU);
         $(eOption()).classList.remove('inactive');
+        $(eOption()).removeAttribute('data-title');
       } else {
         $(eOption()).classList.add('inactive');
+        if (Oa[QU]) $(eOption()).setAttribute('data-title',Oa[QU].QJ+' does not support these functions');
       }
     }
   }
+  // console.log(Oa[QU].QJ);
   $(id).style.fontFamily = (Oa[QU]? Oa[QU].css.join(",") :'');
   $(id).style.fontSize = (Oa[QU] ? Oa[QU].QG : 13) + 'pt';
 };

@@ -45,9 +45,9 @@ function gZ(OT, g5) {
       }
     },
     // 'gM': 'Zawgyi',
-    // 'Ow': 'WinInnwa'[eSrc]
+    // 'Ow': 'WinInnwa'
     'gM': gM[eSrc].name,
-    'Ow': gM.target.name
+    'Ow': gM[eTar].name
   };
   for (var i in OT) {
     if (i != "id") OD[OT.id][i] = OT[i];
