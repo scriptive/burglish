@@ -3,7 +3,6 @@ function N8(wx, KV, Kf) {
   var Nm = eEmpty($(OD.x + "suggest"));
   var Ks = eCreate('div');
   var ol = eCreate('ol');
-  // console.log('N8');
 
   ol.setAttribute('id','col'+OD.x+'0');
   ol.setAttribute('class','gH');

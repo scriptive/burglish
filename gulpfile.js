@@ -73,7 +73,7 @@ gulp.task('sass', function () {
 });
 // NOTE: SCRIPT
 gulp.task('script',function(){
-    gulp.src(path.join(rootAsset,'javascript','*([^A-Z0-9+.]).js'))
+    gulp.src(path.join(rootAsset,'javascript','*([^A-Z0-9-]).js'))
     //.pipe(concat('all.min.js'))
     .pipe(include().on('error', console.log))
     .pipe(uglify(codeStyle.js).on('error', console.log))

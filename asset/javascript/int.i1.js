@@ -1,4 +1,4 @@
-function gf(id) {
+function i1(id) {
   if ($(id).innerHTML === "") {
     var parents = eCreate("li");
     var p = eCreate("p");
@@ -25,7 +25,7 @@ function gf(id) {
         el.classList.add('active');
         gM[id].name = el.id;
         p.innerHTML=el.innerHTML;
-        NO(id);
+        i0(id);
       }
       // direct
       if (gM[id].hasOwnProperty('direct')) {
@@ -39,7 +39,3 @@ function gf(id) {
     $(id).firstChild.firstChild.innerHTML=gM[id].name;
   }
 };
-
-// for (var O4 in Oa) {
-//   if (Oa[O4].wg && Oa[O4].unicode) wo += '<option value="' + O4 + '">' + Oa[O4].QJ + '<\/option>';
-// }

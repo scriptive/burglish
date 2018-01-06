@@ -468,7 +468,7 @@ var K3 = {
 // =require burglish.Ns.js
 // =require burglish.QF.js
 // =require burglish.NL.js
-// =require burglish.g_.js
+// =require burglish.gB.js
 
 // =require burglish.hX.js
 // =require burglish.QO.js
@@ -480,15 +480,15 @@ var K3 = {
 // =require burglish.Ki.js
 // =require burglish.onFocus.js
 
-// =require burglish.gt.js
-// =require burglish.go.js
-// =require burglish.gx.js
+// =require burglish.gT.js
+// =require burglish.gO.js
+// =require burglish.gN.js
 
 var gI = doc.onkeypress ? doc.onkeypress : function() {};
 // if (!w1) doc.onkeypress = NL;
 
 // =require burglish.gD.js
-// =require burglish.gu.js
+// =require burglish.gU.js
 // =require burglish.hV.js
 
 // =require burglish.ND.js

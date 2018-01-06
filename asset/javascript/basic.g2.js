@@ -1,4 +1,4 @@
-function gb() {
+function g2() {
   // var Ot = ["QE", "NQ", "g8"];
   var Ot = ["QE", "g8"];
   for (var j = 0; j < Ot.length; j++) {

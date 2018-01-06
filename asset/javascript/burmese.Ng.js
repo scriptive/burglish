@@ -17,13 +17,12 @@ String.prototype.Ng = function(src, dest, gX) {
     }
   }
   for (var i = 0; i < K8; i++) {
-    if (Oz.OE[i] != 0) {
+    if (Oz.OE && Oz.OE[i] != 0) {
       NV[Oz.OE[i]] = i + gq;
     }
   }
-  for (var i = 0; i < Oz.O8.length; i++) {
-    Nc[Oz.O8[i][0]] = (0xff & NV[Oz.O8[i][0]]) + (i << 8);
-  }
+  if (Oz.O8) for (var i = 0; i < Oz.O8.length; i++) Nc[Oz.O8[i][0]] = (0xff & NV[Oz.O8[i][0]]) + (i << 8);
+
   for (var i = 0; i < hY.length; i++) {
     var Oi = hY.charCodeAt(i);
     if (Oi >= Oz.min && Oi <= Oz.max) {
@@ -44,7 +43,7 @@ String.prototype.Ng = function(src, dest, gX) {
   for (var j = 0; j < hY.length; j++) {
     var Oi = hY.charCodeAt(j);
     if (Oi >= gq && Oi <= gq + K8) {
-      if (Oo.OE[Oi - gq] != 0) {
+      if (Oo.OE && Oo.OE[Oi - gq] != 0) {
         var h2 = false;
         if (hY.length > 1) {
           for (var i = 0; i < Oo.O8.length; i++) {

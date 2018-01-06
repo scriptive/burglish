@@ -1069,9 +1069,9 @@ var Qc = {
 
 // =require burmese.gL.js
 // =require burmese.Ng.js
-// =require burmese.gp.js
+// =require burmese.gP.js
 
-// =require burmese.gj.js
+// =require burmese.gY.js
 // =require burmese.QZ.js
 // =require burmese.h4.js
 // =require burmese.hF.js

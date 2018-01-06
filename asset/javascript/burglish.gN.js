@@ -1,4 +1,4 @@
-function gx(OT) {
+function gN(OT) {
   var wx = $(OT.id),Q4 = wx.value,Qk = wx.parentNode;//w8 = Qk.innerHTML;
   wx.setAttribute('data-autocomplete','off');
   wx.setAttribute('data-burglish','true');

@@ -1,4 +1,4 @@
-String.prototype.gj = function() {
+String.prototype.gY = function() {
   var re;
   var Oc = String(this);
   for (var Oy = 0; Oy < Qc.en.length; Oy++) {
@@ -7,5 +7,5 @@ String.prototype.gj = function() {
       Oc = Oc.replace(re, Qc.bu[Oy]);
     }
   }
-  return Oc.gp();
+  return Oc.gP();
 };

@@ -49,6 +49,7 @@ icon-convert-escape -> Escape Unicode
 
 ```javascript
 'String'.Ng("source", 'target', {"Qv": true});
+gJ(object) -> hT
 ```
 
 

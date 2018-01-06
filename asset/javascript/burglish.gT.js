@@ -1,4 +1,4 @@
-function gt(OT) {
+function gT(OT) {
   if (document.selection) {
     var range = document.selection.createRange();
     $(OT.id + "suggest").style.top = range.offsetTop + OT.Ox;

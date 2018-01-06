@@ -1,6 +1,6 @@
 function gF(wx, KV, Kf) {
   if (!isNaN(KV) && !/[^\d]+/.test(KV) && !OD["ignore"]) {
-    var Oh = KV.gp();
+    var Oh = KV.gP();
     Kf[Kf.length] = [KV, Oh];
     OD[OD.x]["list"][Kf.length - 1] = eval(Kf[Kf.length - 1]);
     var dig = "";

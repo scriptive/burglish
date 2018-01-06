@@ -54,11 +54,11 @@ function gZ(OT, g5) {
   };
   if (!g5) {
     if ($(OT.id)) {
-      if ($(OT.id).tagName == "TEXTAREA") gx(OT);
+      if ($(OT.id).tagName == "TEXTAREA") gN(OT);
     } else {
-      go(OT);
+      gO(OT);
     }
-    gu(OT.id);
+    gU(OT.id);
   }
   hz = OD[OT.id].gM;
 };

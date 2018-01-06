@@ -1,4 +1,4 @@
-function gu(Oz) {
+function gU(Oz) {
   for (var x in OD[Oz]["Qa"]) {
     classToggle('chk' + Oz + x,null,OD[Oz][x]);
   }

@@ -1,4 +1,4 @@
-function g_(wx, Oi, wZ) {
+function gB(wx, Oi, wZ) {
   if (OD[OD.x]["Q7"] != (/[က-အ]/.test(Oi) ? "M" : Oi) + wZ) {
     if (/[ေ]/.test(wZ) && /[က-အ]/.test(Oi) || /[ြ]/.test(wZ) && /[က-အ]/.test(Oi) || /[ေ]/.test(wZ) && /[ြ]/.test(Oi)) {
       OD[OD.x]["Q7"] = (/[က-အ]/.test(Oi) ? "M" : Oi) + wZ;

@@ -21,9 +21,6 @@ function Ns(e) {
   } else if (wV == 113) {
     var Kg = $("chk" + wx.id + "K6");
     classToggle(Kg,null,!classContain(Kg));
-    // classToggle(Kg);
-    // console.log(Kg);
-    // Kg.checked = !Kg.checked;
     gD(Kg, wx.id, "K6");
     return false;
   } else if (wV == 38 && OD[OD.x]["Km"] > 0) {

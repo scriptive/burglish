@@ -27,7 +27,7 @@ function NL(e) {
         if (Oa[hz].unicode == 51) {
           var hx = OD[OD.x]["w5"];
           var hS = hT(Oi);
-          if (g_(wx, hS, hx)) {
+          if (gB(wx, hS, hx)) {
             e.keyCode = null;
             OD[OD.x]["w5"] = hx;
             return;
@@ -47,7 +47,7 @@ function NL(e) {
       var OT = wx.selectionStart;
       if (Oa[hz].unicode == 51) {
         var hx = wx.value.substr(OT - 1, 1);
-        if (g_(wx, Oi, hx)) return false;
+        if (gB(wx, Oi, hx)) return false;
       }
       return Q0(wx, Oi, "");
     }
