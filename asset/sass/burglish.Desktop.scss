@@ -9,44 +9,18 @@ body {
 
   }
 }
-@media #{$media-mobile} {
-}
-@media #{$media-tablet} {
-}
-@media #{$media-desktop} {
-}
 div.burglish{
+  // background-color: red;
   display: table; width: 96%;
   margin:2%;
-  @media #{$media-mobile} {
-    margin:0;width:100%;
-  }
-  @media #{$media-desktop} {
-    max-width: 1600px;
-  }
+  max-width: 1600px;
   >div{
     display: table-row;
     >div{
-      // display: table-cell;
-      // width: 50%;
-      @media #{$media-tablet} {
-        display:table;
-        width: 100%;
-      }
-      @media #{$media-desktop} {
-        display: table-cell;
-        width: 50%;
-      }
+      display: table-cell;
+      width: 50%;
       >div {
-        @media #{$media-mobile} {
-          padding:7px 5px;
-        }
-        @media #{$media-tablet} {
-          padding:7px 5px;
-        }
-        @media #{$media-desktop} {
-          padding:5px;
-        }
+        padding: 5px;
         position: relative;
         display: block;
       }
@@ -130,16 +104,7 @@ div.burglish{
                 >li{
                   background-color: lighten($ColorMain,15%);
                   color: darken($ColorSecond,20%);
-                  // padding-right: 7px;
-                  @media #{$media-mobile} {
-                    padding-right: 1px;
-                  }
-                  @media #{$media-tablet} {
-                    padding-right: 7px;
-                  }
-                  @media #{$media-desktop} {
-                    padding-right: 7px;
-                  }
+                  padding-right: 7px;
                   position: relative;
                   &::after{
                     position: absolute;
@@ -150,15 +115,7 @@ div.burglish{
                     content: "\2193";
                   }
                   p{
-                    @media #{$media-mobile} {
-                      width: 60px;
-                    }
-                    @media #{$media-tablet} {
-                      width: 100px;
-                    }
-                    @media #{$media-desktop} {
-                      width: 100px;
-                    }
+                    width: 100px;
                     padding: 0; margin: 0;
                     display: block;
                     overflow: hidden;
@@ -210,7 +167,7 @@ div.burglish{
                       }
                     }
                   }
-                  &:hover,&:active{
+                  &:hover{
                     overflow: visible;
                     background-color: lighten($ColorMain,20%);
                     ol{
@@ -278,15 +235,6 @@ div.burglish{
                       color:darken($ColorMain,45%);
                       text-shadow:1px 1px 1px #fff;
                     }
-                    @media #{$media-mobile} {
-                      max-width: 30px;
-                    }
-                    @media #{$media-tablet} {
-                      width: 50px;
-                    }
-                    @media #{$media-desktop} {
-
-                    }
                   }
                   &.active{
                     &::before{
@@ -302,9 +250,6 @@ div.burglish{
                 // width: 100%;
                 // background-color: red;
                 float: right;
-                @media #{$media-mobile} {
-                  display: none;
-                }
                 li{
                   min-width: 22px;
                   text-overflow:ellipsis;
@@ -373,9 +318,6 @@ div.burglish{
               &#targetText{
                 background-color: lighten(#ccc,17%);
                 border: 1px solid lighten(#ccc,12%);
-              }
-              @media #{$media-mobile} {
-                min-height:70px;
               }
             }
             div{

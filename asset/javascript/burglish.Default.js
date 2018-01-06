@@ -483,8 +483,7 @@ var K3 = {
 // =require burglish.gT.js
 // =require burglish.gO.js
 // =require burglish.gN.js
-
-var gI = doc.onkeypress ? doc.onkeypress : function() {};
+// var gI = doc.onkeypress ? doc.onkeypress : function() {};
 // if (!w1) doc.onkeypress = NL;
 
 // =require burglish.gD.js
@@ -497,4 +496,4 @@ var gI = doc.onkeypress ? doc.onkeypress : function() {};
 // =require burglish.Os.js
 // =require burglish.gZ.js
 
-gJ.burglish = true;
+// gJ.burglish = true;

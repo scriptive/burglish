@@ -1080,4 +1080,4 @@ var Qc = {
 // =require burmese.KW.js
 // =require burmese.hG.js
 // =require burmese.Qn.js
-gJ.burmese = true;
+// gJ.burmese = true;

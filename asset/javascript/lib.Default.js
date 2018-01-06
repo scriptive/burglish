@@ -142,4 +142,4 @@ doc.onmousedown = gP;
 // doc.onmouseup = gP(false);
 doc.onmouseup = function(){gP();};
 // doc.onmouseup = new Function("gR=false");
-gJ.lib = true;
+// gJ.lib = true;

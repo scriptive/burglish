@@ -8,7 +8,6 @@ var QX = {};
 var h7 = {};
 
 var gJ= {
-  basic: true
 };
 var gl= {
   i: 0,
